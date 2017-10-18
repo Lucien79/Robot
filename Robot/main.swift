@@ -1,12 +1,15 @@
-//
-//  main.swift
-//  Robot
-//
-//  Created by Lucien Faure on 17/10/2017.
-//  Copyright © 2017 Lucien Faure. All rights reserved.
-//
+var robot = Robot(nom: "Luffy")
+var robotAmi = Robot(nom: "Zoro")
+var robotAmi1 = Robot(nom: "Nami")
+var robotAmi2 = Robot(nom: "Sanji")
 
-import Foundation
+var robots: [Robot] = [robot,robotAmi,robotAmi1,robotAmi2]
 
-print("Hello, World!")
+
+for _ in 1...3{
+    for unRobot in robots {
+        unRobot.sePresenter()
+    }
+}
+    
 
